@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class ChoiceManager : Singleton<ChoiceManager>
 {
-    public void RockInputSelection() => GameManager.Instance.OnPlayerChoiceSelected?.Invoke(ChoiceType.Rock);
-    public void PaperInputSelection() => GameManager.Instance.OnPlayerChoiceSelected?.Invoke(ChoiceType.Paper);
-    public void ScissorsInputSelection() => GameManager.Instance.OnPlayerChoiceSelected?.Invoke(ChoiceType.Scissors);
+    public void InputSelectionRock() => GameManager.Instance.OnPlayerChoiceSelected?.Invoke(ChoiceType.Rock);
+    public void InputSelectionPaper() => GameManager.Instance.OnPlayerChoiceSelected?.Invoke(ChoiceType.Paper);
+    public void InputSelectionScissors() => GameManager.Instance.OnPlayerChoiceSelected?.Invoke(ChoiceType.Scissors);
 }
